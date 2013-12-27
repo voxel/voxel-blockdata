@@ -1,0 +1,6 @@
+# voxel-blockdata
+
+## License
+
+MIT
+
