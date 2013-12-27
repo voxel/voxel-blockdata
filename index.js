@@ -6,6 +6,9 @@ function BlockData(game, opts) {
   this.game = game;
 }
 
+// Get the blockdataMap for the chunk at given world coordinates
+// Returns undefined if the chunk doesn't exist
+// Initializes blockdataMap to {} if it doesn't exist (but the chunk does)
 BlockData.prototype.getForChunk = function(x, y, z) {
   var chunkIndex = this.game.voxels.chunkAtCoordinates(x, y, z).join('|');
   var chunk = this.game.voxels.chunks[chunkIndex];
@@ -20,6 +23,7 @@ BlockData.prototype.getForChunk = function(x, y, z) {
 };
 
 BlockData.prototype.coordsToKey = function(x, y, z) {
+  // TODO: should we translate global world coords to local chunk coords?
   return [x, y, z].join(',');
 };
 
