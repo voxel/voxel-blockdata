@@ -1,8 +1,11 @@
+'use strict';
+
 module.exports = function(game, opts) {
   return new BlockData(game, opts);
 };
 
 function BlockData(game, opts) {
+  /*jshint unused:false */
   this.game = game;
 }
 
