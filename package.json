@@ -1,7 +1,7 @@
 {
   "name": "voxel-blockdata",
   "description": "store arbitrary per-block data in chunks",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:deathcap/voxel-blockdata.git"
@@ -11,8 +11,7 @@
     "block",
     "data"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "peerDependencies": {
     "voxel-engine": ">=0.19.0",
     "voxel-plugins": ">=0.1.0"
