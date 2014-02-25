@@ -12,9 +12,5 @@
     "data"
   ],
   "dependencies": {},
-  "peerDependencies": {
-    "voxel-engine": ">=0.19.0",
-    "voxel-plugins": ">=0.1.0"
-  },
   "license": "MIT"
 }
