@@ -47,3 +47,12 @@ BlockData.prototype.set = function(x, y, z, data) {
 
   blockdataMap[this.coordsToKey(x, y, z)] = data;
 };
+
+BlockData.prototype.clear = function(x, y, z) {
+  var blockdataMap = this.getForChunk(x, y, z);
+
+  if (blockdataMap === undefined)
+    return undefined;
+
+  delete blockdataMap[this.coordsToKey(x, y,z)];
+};
