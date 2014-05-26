@@ -2,6 +2,7 @@
   "name": "voxel-blockdata",
   "description": "store arbitrary per-block data in chunks",
   "version": "0.2.0",
+  "main": "blockdata.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:deathcap/voxel-blockdata.git"
